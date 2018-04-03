@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/costa-rica.jpg",
+            "imgLocation": "Costa Rica",
+            "description": "Rincon de la Vieja National Park",
+            "date": "01/01/2016"
+        },
+        {
+            "imgPath": "img/places/brazil.jpg",
+            "imgLocation": "Brazil",
+            "description": "Foz Do Iguaçu",
+            "date": "02/01/2016"
+        },
+        {
+            "imgPath": "img/places/spain.jpg",
+            "imgLocation": "Spain",
+            "description": "Ronda",
+            "date": "03/01/2016"
+        },
+		{
+		  "imgPath": "img/places/usa.jpg",
+		  "imgLocation": "United States",
+		  "description": "Smokey Mountain",
+		  "date": "04/01/2016"
+		},
+		{
+		  "imgPath": "img/places/germany.jpg",
+		  "imgLocation": "Germany",
+		  "description": "Neuschwanstein Castle",
+		  "date": "04/01/2016"
+		}
+  ]
+}
