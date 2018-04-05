@@ -18,7 +18,8 @@ animate();
 
 var mLastFrameTime = 0;
 var mWaitTime = 5000; //time in ms
-function animate() {
+function animate()
+{
     requestAnimFrame( animate );
 	var currentTime = new Date().getTime();
 	if (mLastFrameTime === 0) {
@@ -51,13 +52,14 @@ var $_GET = getQueryParams(document.location.search);
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'extra.json';
+var mUrl = 'images.json';
 
 
 if($_GET["json"] != undefined)
 {
 	mUrl = $_GET["json"];
 }
+
 
 var mCurrentIndex = 0;
 var mImages = []
@@ -69,7 +71,6 @@ function GalleryImage (imgLocation, description, date, imgPath) {
 	this.imgPath = imgPath;
 }
 
-var mURL = "images.json";
 var mRequest = new XMLHttpRequest();
 mRequest.onreadystatechange = function() {
 	if (mRequest.readyState == 4 && mRequest.status == 200) {
@@ -88,7 +89,7 @@ mRequest.onreadystatechange = function() {
 	}
 };
 
-mRequest.open("GET",mURL, true);
+mRequest.open("GET",mUrl, true);
 mRequest.send();
 
 function swapPhoto() {
